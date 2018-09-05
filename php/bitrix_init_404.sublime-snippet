@@ -14,7 +14,7 @@ function Redirect404()
    )
    {
         global \$APPLICATION;
-        \$APPLICATION->RestartBuffer();
+        \\$APPLICATION->RestartBuffer();
         CHTTP::SetStatus("404 Not Found");
         include(\$_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/header.php");
         include(\$_SERVER["DOCUMENT_ROOT"].PATH_TO_404);
